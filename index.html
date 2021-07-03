@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel= "stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="text-center">JavaScript Quiz</h2>
+                <hr>
+            </div>
+        </header>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <div id="main-game">
+    
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="timer text-center" id="game-timer">30</div>
+            <div class="jumbotron text-center" id="question-container">Question
+            </div>
+    
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="text-center" id="answers-container">
+                  <div class="answer" data-content="1000">Answer.</div>
+                  <div class="answer" data-content="1001">Answer.</div>
+                  <div class="answer" data-content="1002">Answer.</div>
+                  <div class="answer" data-content="1003">Answer.</div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="row top-buffer">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="well" id="answer-response">Explaination</div>
+          </div>
+        </div>  
+    
+        <hr>  
+    
+        <footer>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <button class="btn btn-primary pull-left" id="previousQ">&nbsp;Previous&nbsp;</button>
+              <button class="btn btn-primary pull-right" id="nextQ">&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              <button class="btn btn-primary pull-right" id="finish">&nbsp;&nbsp;Finish&nbsp;&nbsp;</button>
+            </div>
+          </div>      
+        </footer>
+        
+      </div>
+      
+      <div id="splash-screen" class="container top-buffer">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div class="jumbotron text-center">
+              <h2>JavaScript Quiz!<br>Good Luck!</h2>
+              <div class="small">(This is a timed quiz of only 60 seconds)</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div class="col-md-offset-2 col-md-8 text-center">
+            <button id="start" class="btn btn-primary btn-lg">Start Quiz</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="results-display" class="container top-buffer">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 text-center">
+            <h4>Your Score!</h4>
+            <div class="well" id="answerHistory">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Question</th>
+                    <th>You answered</th>
+                    <th>The correct answer</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="result-rows">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div class="col-md-offset-2 col-md-8 text-center">
+            <button id="restart" class="btn btn-lg btn-primary">Restart</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</body>
+</html>
