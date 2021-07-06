@@ -16,5 +16,5 @@ Go take the quiz [here](https://kirafaye99.github.io/JavaScript-Quiz/)!
 
 ### References
 
--*Quiz questions are from [W3 Schools](https://www.w3schools.com/js/js_quiz.asp).*
--*Inspiration for code is from [codepen.io](https://codepen.io/rtemplo/pen/BdgNjm)*
+- *Quiz questions are from [W3 Schools](https://www.w3schools.com/js/js_quiz.asp).*
+- *Inspiration for code is from [codepen.io](https://codepen.io/rtemplo/pen/BdgNjm)*
