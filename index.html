@@ -56,9 +56,9 @@
         <footer>
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
-              <button class="btn btn-primary pull-left" id="previousQ">&nbsp;Previous&nbsp;</button>
-              <button class="btn btn-primary pull-right" id="nextQ">&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;</button>
-              <button class="btn btn-primary pull-right" id="finish">&nbsp;&nbsp;Finish&nbsp;&nbsp;</button>
+              <button class="btn btn-primary pull-left" id="previousQ" onclick="getPreviousQuestion()">&nbsp;Previous&nbsp;</button>
+              <button class="btn btn-primary pull-right" id="nextQ" onclick="getNextQuestion()">&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              <button class="btn btn-primary pull-right" id="finish" onclick="endGame()">&nbsp;&nbsp;Finish&nbsp;&nbsp;</button>
             </div>
           </div>      
         </footer>
@@ -70,13 +70,13 @@
           <div class="col-md-offset-2 col-md-8">
             <div class="jumbotron text-center">
               <h2>JavaScript Quiz!<br>Good Luck!</h2>
-              <div class="small">(This is a timed quiz of only 60 seconds)</div>
+              <div class="small">(This is a timed quiz of only 60 seconds. Answer incorrectly and time will be deducted.)</div>
             </div>
           </div>
         </div>
         <div class="row">    
           <div class="col-md-offset-2 col-md-8 text-center">
-            <button id="start" class="btn btn-primary btn-lg">Start Quiz</button>
+            <button id="start" onclick="meStart()" class="btn btn-primary btn-lg">Start Quiz</button>
           </div>
         </div>
       </div>
@@ -89,10 +89,8 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Question</th>
-                    <th>Your Answer</th>
-                    <th>Correct Answer</th>
-                    <th>Status</th>
+                    <th>Initials</th>
+                    <th>Score</th>
                   </tr>
                 </thead>
                 <tbody id="result-rows">
@@ -103,7 +101,7 @@
         </div>
         <div class="row">    
           <div class="col-md-offset-2 col-md-8 text-center">
-            <button id="restart" class="btn btn-lg btn-primary">Restart</button>
+            <button id="restart" onclick = "restart()" class="btn btn-lg btn-primary">Restart</button>
           </div>
         </div>
       </div>
